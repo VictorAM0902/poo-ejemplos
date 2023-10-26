@@ -1,8 +1,13 @@
 class Persona {
-    String nombre;
-    int edad;
-    boolean vive;
+   private String nombre;
+   private int edad;
+   private boolean vive;
 
+   Persona(String nombre, int edad){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.vive = true;
+   }
 
 
     void saludar() {
@@ -16,4 +21,16 @@ class Persona {
         vive = false;
     }
 
+    int miEdad() {
+        return this.edad;
     }
+
+    boolean vive(){
+        return this.vive;
+    }
+
+    String miNombre(){
+        return this.nombre;
+    }
+
+}
